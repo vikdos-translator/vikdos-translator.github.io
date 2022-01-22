@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>vikdos</title>
+        <h1 style="text-align: center;"><a style="text-decoration: none; color: white;" href="http://localhost:8000/index.html">vikdos</a></h1>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <style>
+            body {
+            background-color: white;
+              background-image: url('lyricstranslate.png');
+              background-repeat: no-repeat;
+              background-position-x: 50.5%;
+              background-position-y: 15%;
+            }
+            h1{
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 50px;
+                border-style: solid;
+                margin-top: 20px;
+                margin-left: 39%;
+                border-radius: 10px;
+                width: 20%;
+                padding: 10px 0 10px 0;
+                color: white;
+                background-color: black;
+            }
+            body{
+                background-color: white;
+                overflow: hidden;
+            }
+            .updates{
+                background-color: rgb(48, 48, 182);
+                border: 0px;
+                color: white;
+                height: 45px;
+                width: 340px;
+                position: relative;
+                top: 3px;
+                left: 65px;
+                border-radius: 10px;
+                font-size: 30px;
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+                text-align: center;
+                padding-top: 10px;
+            }
+            .updates_box{
+                background-color: rgb(48, 48, 182);
+                color: white;
+                height: 450px;
+                width: 340px;
+                position: relative;
+                bottom: 27px;
+                left: 65px;
+                border-radius: 10px;
+                font-size: 30px;
+                border-top-left-radius: 0;
+                border-top-right-radius: 0;
+                text-align: center;
+                border-style: solid;
+                border-width: 3px 0 0 0;
+                border-color: black;
+                padding: 0;
+                margin: 0;
+                overflow: auto;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            .update{
+                background-color: rgb(0, 0, 0);
+                color: white;
+                border-radius: 10px;
+                font-size: 17px;
+                text-align: left;
+                padding-left: 7px;
+                padding-top: 5px;
+                margin-top: 10px;
+                margin-left: 1px;
+                margin-bottom: 5px;
+                border-style: solid;
+                border-width: 1px;
+                border-color: red;
+                width: 97%;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            /* width */
+            ::-webkit-scrollbar {
+                width: 10px;
+            }
+            /* Track */
+            ::-webkit-scrollbar-track {
+                background: transparent;
+                scroll-behavior: smooth;
+                margin-top: 3px;
+                margin-bottom: 5px;
+            }
+            /* Handle */
+            ::-webkit-scrollbar-thumb {
+            background: gray; 
+            border-radius: 5px;
+            }
+            /* Handle on hover */
+            ::-webkit-scrollbar-thumb:hover {
+            background: #555; 
+            }
+            .sign_off{
+                margin: -15px 0 -10px 0;
+                padding: 2px 7px 0 1px;
+                display: flex; 
+                justify-content: space-between;
+            }
+            .text{
+                margin: 2px 0 0 14px;
+                padding: 0;
+            }
+            .aboutme{
+                background-color: rgb(48, 48, 182);
+                border: 0px;
+                color: white;
+                height: 45px;
+                width: 350px;
+                position: relative;
+                left: 1020px;
+                bottom: 563px;
+                border-radius: 10px;
+                font-size: 30px;
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+                text-align: center;
+                padding-top: 10px;
+            }
+            .aboutme_box{
+                background-color: rgb(48, 48, 182);
+                color: white;
+                height: 450px;
+                width: 337px;
+                position: relative;
+                left: 1020px;
+                bottom: 593px;
+                border-radius: 10px;
+                font-size: 19px;
+                border-top-left-radius: 0;
+                border-top-right-radius: 0;
+                text-align: center;
+                border-style: solid;
+                border-width: 3px 0 0 0;
+                border-color: black;
+                padding: 0 0 0 13px;
+                margin: 0 0 0 0;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+            }
+            .aboutme_text{
+                text-align: left; 
+                text-indent: 20px;
+            }
+            .link_style{
+                color: rgb(232, 177, 28);
+            }
+            my-email::after {
+                content: attr(data-domain);
+            }
+            my-email::before {
+                content: attr(data-user);
+            }
+            li{
+                margin: 0 0 3px 0;
+            }
+            .filter{
+                width: 95%;
+                background-color: black;
+                border-radius: 5px;
+                border-style: none;
+                margin: 5px 3px 0 0;
+                padding: 0 0 0 10px;
+                height: 30px;
+                color: white;
+                font-size: 15px;
+            }
+            .filter2{
+                width: 95%;
+                background-color: black;
+                border-radius: 5px;
+                border-style: none;
+                margin: 3px 3px 0 0;
+                padding: 7px 0 0 8px;
+                color: white;
+                height: 355px;
+                font-size: 15px;
+            }
+            .filter2::placeholder{
+                color: white;
+                font-family: 'Helvetica', Arial, Lucida Grande, sans-serif;
+                font-size: 15px;
+            }
+            .filter2:focus::placeholder{
+                color: transparent;
+            }
+            .filter::placeholder{
+                color: white;
+                font-family: 'Helvetica', Arial, Lucida Grande, sans-serif;
+                font-size: 15px;
+            }
+            .filter:focus::placeholder{
+                color: transparent;
+            }
+            .placeholder{
+                margin-left: 4px;
+                position: absolute;
+                left: 10px;
+                top: 10px;
+                font-family: 'Helvetica', Arial, Lucida Grande, sans-serif;
+                font-size: 15px;
+            }
+            .placeholder2{
+                margin-left: 4px;
+                position: absolute;
+                left: 10px;
+                top: 50px;
+                font-family: 'Helvetica', Arial, Lucida Grande, sans-serif;
+                font-size: 15px;
+            }
+            input:focus, textarea:focus, select:focus{
+                outline: none;
+            }
+            .to_send{
+                width: 97%;
+                background-color: white;
+                border-radius: 5px;
+                border-style: none;
+                margin: 0 3px 3px 0;
+                padding: 3px 0 0 10px;
+                height: 40px;
+                color: black;
+                font-size: 25px;
+                font-family: Arial, Helvetica, sans-serif
+            }
+            .to_send:hover{
+                background-color: rgb(54,199,30);
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <p class="updates">Updates</p>
+        <div class="updates_box">
+
+            <div class="update">
+                <p class="text">
+                    Planning on translating a couple Russian songs this weekend!
+                    <br>
+                </p>
+                <div class="sign_off">
+                    <p>Jan 21, 2022</p>
+                    <p>~vikdos</p>
+                </div>
+            </div>
+
+            <div class="update">
+                Hello,<br>
+                <p class="text">This is my new website! It's only one page, so there isn't much to explore.<br>
+                This will be where I post updates about translations that I plan to do.<br></p>
+                <div class="sign_off">
+                    <p>Jan 21, 2022</p>
+                    <p>~vikdos</p>
+                </div>
+            </div>
+
+        </div>
+        <p class="aboutme">Contact form</p>
+        <div class="aboutme_box">
+            <form action="https://formsubmit.co/vzabotlivov@gmail.com" method="POST" style="margin-left: -10px;">
+                <input autocomplete="off" class="filter" type="text" name="name" placeholder="Name" required><br>
+                <textarea class="filter2" placeholder="Message" style="color: white; resize: none; font-family: 'Helvetica', Arial, Lucida Grande, sans-serif;" name="message" required></textarea>
+                <button class="to_send" type="submit">SEND</button>
+           </form>
+            </p>
+        </div>
+    </body>
+</html>
